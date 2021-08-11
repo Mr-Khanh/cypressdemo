@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 2,
-    "start": "2021-08-11T03:48:34.632Z",
-    "end": "2021-08-11T03:49:58.876Z",
-    "duration": 84244,
+    "start": "2021-08-11T04:03:47.198Z",
+    "end": "2021-08-11T04:04:20.978Z",
+    "duration": 33780,
     "testsRegistered": 4,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "59908c69-a4b3-41f6-9ca7-2b8bd240bd3a",
+      "uuid": "f6c1c260-1465-43f1-9168-0d83b475cdd1",
       "title": "",
       "fullFile": "cypress/integration/my-first-test-01.js",
       "file": "cypress/integration/my-first-test-01.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2e1dc6aa-4d73-4ea3-8995-198c17b301c1",
+          "uuid": "c53a97d7-433d-49a2-ac9c-0cd8c3b306c6",
           "title": "My-first-test-01",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Test textbox element ",
               "fullTitle": "My-first-test-01 Test textbox element ",
               "timedOut": null,
-              "duration": 22804,
+              "duration": 12653,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// User action on GUI\n_textbox.default.typeFullName('testFullname');\n_textbox.default.typeEmail('test@gmail.com');\n_textbox.default.typeCurrentAddress('testCurrentAddress');\n_textbox.default.typePermanentAddress('testPermanentAddress');\n_textbox.default.clickSubmit(); // Verification on GUI\n\ncy.get('div[id=\"output\"]').find('p').should($p => {\n  expect($p).to.have.length(4);\n  expect($p.first()).to.contain('testFullname');\n  expect($p.get(1)).to.contain(\"test@gmail.com\");\n  expect($p.get(2)).to.contain(\"testCurrentAddress\");\n  expect($p.get(3)).to.contain(\"testPermanentAddress\");\n});",
               "err": {},
-              "uuid": "f4879713-3890-4c3d-97ff-9455af97c0a1",
-              "parentUUID": "2e1dc6aa-4d73-4ea3-8995-198c17b301c1",
+              "uuid": "d468e451-c28a-4a8d-8a25-1fa3aacb0c0e",
+              "parentUUID": "c53a97d7-433d-49a2-ac9c-0cd8c3b306c6",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Trying with soft assertion",
               "fullTitle": "My-first-test-01 Trying with soft assertion",
               "timedOut": null,
-              "duration": 15583,
+              "duration": 8808,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
                 "estack": "AssertionError: \n\nSoft assertion  1:\n\n\t1 : key -> $ \t\t message: expected 'Name:testFullname' to deeply equal 'Name:testFullname1'\nStack: AssertionError: \n\t1 : key -> $ \t\t message: expected 'Name:testFullname' to deeply equal 'Name:testFullname1'\n\n    ,_chaiDeepEqual (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31856:20)\n    ,_assertString (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31609:19)\n    ,_assert (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31678:23)\n    ,_prepareAndAssert (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31920:12)\n     (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31290:12)\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:164:17)\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\integration\\my-first-test-01.js:166:8)",
                 "diff": "- { 'Soft assertion 1': 'Name:testFullname' }\n+ { 'Soft assertion 1': 'Name:testFullname1' }\n"
               },
-              "uuid": "bcfe52c5-f445-4118-81a3-e4e901a74879",
-              "parentUUID": "2e1dc6aa-4d73-4ea3-8995-198c17b301c1",
+              "uuid": "9c8bb967-38bb-49cb-b554-c355b3a41506",
+              "parentUUID": "c53a97d7-433d-49a2-ac9c-0cd8c3b306c6",
               "isHook": false,
               "skipped": false
             },
@@ -78,7 +78,7 @@
               "title": "Trying with xpath",
               "fullTitle": "My-first-test-01 Trying with xpath",
               "timedOut": null,
-              "duration": 10878,
+              "duration": 4338,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -91,8 +91,8 @@
                 "estack": "AssertionError: \n\nSoft assertion  1:\n\n\t1 : key -> $ \t\t message: expected 'Name:testFullname' to deeply equal 'Name:testFullname1'\nStack: AssertionError: \n\t1 : key -> $ \t\t message: expected 'Name:testFullname' to deeply equal 'Name:testFullname1'\n\n    ,_chaiDeepEqual (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31856:20)\n    ,_assertString (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31609:19)\n    ,_assert (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31678:23)\n    ,_prepareAndAssert (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31920:12)\n     (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31290:12)\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:164:17)\n\nSoft assertion  3:\n\n\t1 : key -> $ \t\t message: expected 'Current Address :currentAddress ' to deeply equal 'Current Address :currentAddress'\nStack: AssertionError: \n\t1 : key -> $ \t\t message: expected 'Current Address :currentAddress ' to deeply equal 'Current Address :currentAddress'\n\n    ,_chaiDeepEqual (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31856:20)\n    ,_assertString (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31609:19)\n    ,_assert (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31678:23)\n    ,_prepareAndAssert (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31920:12)\n     (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:31290:12)\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\support\\index.js:164:17)\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\integration\\my-first-test-01.js:201:8)",
                 "diff": "- { 'Soft assertion 1': 'Name:testFullname',\n-   'Soft assertion 3': 'Current Address :currentAddress ' }\n+ { 'Soft assertion 1': 'Name:testFullname1',\n+   'Soft assertion 3': 'Current Address :currentAddress' }\n"
               },
-              "uuid": "60f267d5-a81a-4d2f-aa60-9e0a1bae8075",
-              "parentUUID": "2e1dc6aa-4d73-4ea3-8995-198c17b301c1",
+              "uuid": "5e9403b0-2206-4c21-ac24-832576bcf7df",
+              "parentUUID": "c53a97d7-433d-49a2-ac9c-0cd8c3b306c6",
               "isHook": false,
               "skipped": false
             },
@@ -100,7 +100,7 @@
               "title": "Trying with cy.task",
               "fullTitle": "My-first-test-01 Trying with cy.task",
               "timedOut": null,
-              "duration": 34778,
+              "duration": 7808,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -109,24 +109,24 @@
               "context": null,
               "code": "cy.task('log', 'This will be output to the terminal');",
               "err": {},
-              "uuid": "6890ff73-d9ec-4584-a7d0-7b7d9e6bfe94",
-              "parentUUID": "2e1dc6aa-4d73-4ea3-8995-198c17b301c1",
+              "uuid": "12419f26-076a-448b-9bae-479c41cb3703",
+              "parentUUID": "c53a97d7-433d-49a2-ac9c-0cd8c3b306c6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f4879713-3890-4c3d-97ff-9455af97c0a1",
-            "6890ff73-d9ec-4584-a7d0-7b7d9e6bfe94"
+            "d468e451-c28a-4a8d-8a25-1fa3aacb0c0e",
+            "12419f26-076a-448b-9bae-479c41cb3703"
           ],
           "failures": [
-            "bcfe52c5-f445-4118-81a3-e4e901a74879",
-            "60f267d5-a81a-4d2f-aa60-9e0a1bae8075"
+            "9c8bb967-38bb-49cb-b554-c355b3a41506",
+            "5e9403b0-2206-4c21-ac24-832576bcf7df"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 84043,
+          "duration": 33607,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
