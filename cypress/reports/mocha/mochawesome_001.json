@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-11T03:50:19.832Z",
+    "end": "2021-08-11T03:50:35.690Z",
+    "duration": 15858,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c7e44ba5-2a6a-4d7d-9c19-c520d97ccf86",
+      "title": "",
+      "fullFile": "cypress/integration/my-first-test-02.js",
+      "file": "cypress/integration/my-first-test-02.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54860d28-1bdb-4598-ab73-3d03f9b8a6c5",
+          "title": "My-first-test-02",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test textbox element ",
+              "fullTitle": "My-first-test-02 Test textbox element ",
+              "timedOut": null,
+              "duration": 9268,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// User action on GUI\n_textbox.default.typeFullName('testFullname');\n_textbox.default.typeEmail('test@gmail.com');\n_textbox.default.typeCurrentAddress('testCurrentAddress');\n_textbox.default.typePermanentAddress('testPermanentAddress');\n_textbox.default.clickSubmit(); // Verification on GUI\n\ncy.get('div[id=\"output\"]').find('p').should($p => {\n  expect($p).to.have.length(4);\n  expect($p.first()).to.contain('testFullname');\n  expect($p.get(1)).to.contain(\"test@gmail.com\");\n  expect($p.get(2)).to.contain(\"testCurrentAddress\");\n  expect($p.get(3)).to.contain(\"testPermanentAddress\");\n});",
+              "err": {},
+              "uuid": "b76fbeaf-27c8-4f1b-971d-c3fbeaeffb24",
+              "parentUUID": "54860d28-1bdb-4598-ab73-3d03f9b8a6c5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Trying with cy.task",
+              "fullTitle": "My-first-test-02 Trying with cy.task",
+              "timedOut": null,
+              "duration": 6445,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('log', 'This will be output to the terminal');",
+              "err": {},
+              "uuid": "f31826e7-643d-4fe6-9a87-1c2a617dd240",
+              "parentUUID": "54860d28-1bdb-4598-ab73-3d03f9b8a6c5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b76fbeaf-27c8-4f1b-971d-c3fbeaeffb24",
+            "f31826e7-643d-4fe6-9a87-1c2a617dd240"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15713,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
